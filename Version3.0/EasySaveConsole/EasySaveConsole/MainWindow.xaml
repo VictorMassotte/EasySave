@@ -1,0 +1,110 @@
+﻿<Window x:Class="EasySaveConsole.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesigin="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="360" Width="750" ResizeMode="NoResize" WindowStyle="None">
+
+    <Window.Background>
+        <SolidColorBrush Color="#FF2B3545"/>
+    </Window.Background>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF044F6F" Offset="1"/>
+                    <GradientStop Color="#FF0BABF1" Offset="0"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#FF77D1F7" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+
+            <Grid Background="#FF004265">
+                <TextBlock Text="EASYSAVE" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian" FontWeight="Normal" Foreground="White" FontSize="38"/>
+            </Grid>
+
+            <StackPanel Grid.Row="1">
+                <Button Margin="10" Click="StartClient" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Shutdown" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="StartCo" Text="START CONNECTION" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="91*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Rectangle Grid.Row="1"  Margin="15" Fill="#FFD0D1D0" RadiusX="11" RadiusY="11"/>
+                <ListBox x:Name="Save_work" Margin="27,65,363,27" SelectionChanged="SelectionChanged"/>
+
+                <Label x:Name="ipserver" Content="IP SERVER : " FontFamily="Sitka Text" Margin="21,33,0,264"/>
+                <TextBox x:Name="text_ipserevr" Margin="105,32,0,269" HorizontalAlignment="Left" Width="188" TextChanged="Ip_TextChanged" />
+
+                <Label x:Name="name_backup" Content="Name:" FontFamily="Sitka Text" Margin="191,70,22,224"/>
+                <Label x:Name="progression" Content="Progressing : " FontFamily="Sitka Text" Margin="190,98,148,204"/>
+
+
+
+                <Button Click="PauseBackup" Background="#FF004265" BorderBrush="{x:Null}" Margin="314,129,154,156">
+                    <Grid Width="74" Height="30">
+                        <materialDesigin:PackIcon Kind="Pause" VerticalAlignment="Center" Foreground="White" Margin="1,0,0,0"/>
+                        <TextBlock x:Name="PlauseText" Text="PAUSE" Margin="21,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="54" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button Click="StopBackup" Background="#FF004265" BorderBrush="{x:Null}" Margin="416,129,52,156">
+                    <Grid Width="74" Height="30">
+                        <materialDesigin:PackIcon Kind="Stop" VerticalAlignment="Center" Foreground="White" Margin="1,0,0,0"/>
+                        <TextBlock x:Name="StopText" Text="STOP" Margin="21,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="54" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button Margin="283,233,114,45" Click="LoadProgress" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Show" VerticalAlignment="Center" Foreground="White" Margin="1,0,0,0"/>
+                        <TextBlock x:Name="LoadProgressText" Text="PROGRESSING" Margin="21,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="84" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+
+                <Button Click="PlayBackup" Background="#FF004265" BorderBrush="{x:Null}" Margin="212,129,256,156">
+                    <Grid Width="74" Height="30">
+                        <materialDesigin:PackIcon Kind="Play" VerticalAlignment="Center" Foreground="White" Margin="1,0,0,0"/>
+                        <TextBlock x:Name="PlayText1" Text="PLAY" Margin="21,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="54" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+            </Grid>
+
+        </Grid>
+        <Grid x:Name="GridMenu" Grid.ColumnSpan="2" Background="#FF0056A7" MouseDown="GridMenu_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Buttonexit" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Button_exit">
+                    <materialDesigin:PackIcon Kind="Shutdown" VerticalAlignment="Center" Foreground="White"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,144 @@
+﻿<Window x:Class="EasySaveApp.view.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySaveApp" xmlns:materialDesigin="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="500" Width="950" ResizeMode="NoResize" WindowStyle="None">
+    <Window.Background>
+        <SolidColorBrush Color="#FF2B3545"/>
+    </Window.Background>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF044F6F" Offset="1"/>
+                    <GradientStop Color="#FF0BABF1" Offset="0"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#FF77D1F7" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+
+            <Grid Background="#FF004265">
+                <TextBlock Text="EASYSAVE" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian" FontWeight="Normal" Foreground="White" FontSize="38"/>
+            </Grid>
+
+            <StackPanel Grid.Row="1">
+                <Button Margin="10" Click="Open_cryptextension" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Build" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="textcrypt" Text="PARAMETER OF CRYPTAGE" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button Margin="10" Click="Open_blacklist" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Block" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="textbacklist" Text="BLACKLIST SOFTWARE" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button x:Name="button_fr" Margin="10" Click="Button_Click_fr" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="translate" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="francaistext"  Text="FRENCH" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button x:Name="button_en" Margin="10" Click="Button_Click_en" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="language" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="englishtext"  Text="ENGLISH" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="111*"/>
+                <RowDefinition Height="124*"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Margin="20,26,20,26" Fill="#FFD0D1D0" RadiusX="11" RadiusY="11"/>
+            <Grid>
+                <Button x:Name="buton_addsave" Click="buton_addsave_Click" Margin="510,138,40,36"  Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="backup" Margin="-16,1,0,0" Foreground="White" Height="25" Width="25"/>
+                        <TextBlock x:Name="text_addsave" Text="ADD SAVE" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="160" FontSize="10" Foreground="White" Margin="2,0,0,0"/>
+                    </Grid>
+                </Button>
+
+                <RadioButton x:Name="mirror_button" Content="Mirror Backup" HorizontalAlignment="Left" Margin="515,81,0,0" VerticalAlignment="Top" Height="14" IsChecked="True" Checked="mirror_button_Checked" Width="214" FontFamily="Sitka Text" />
+                <RadioButton x:Name="diff_button" Content="Differential Backup" HorizontalAlignment="Left" Margin="515,106,0,0" VerticalAlignment="Top" Height="19" Width="214" FontFamily="Sitka Text"/>
+
+
+                <Grid Grid.Column="1" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="274*"/>
+                        <ColumnDefinition Width="147*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="292*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="name_backup" Content="Name:" FontFamily="Sitka Text" Margin="21,33,0,162"/>
+                    <Label x:Name="source_name" FontFamily="Sitka Text" Content="Source folder path:" Margin="21,65,4,131"/>
+                    <Label x:Name="target_name" Content="Target folder path:" FontFamily="Sitka Text" Margin="21,102,1,96"/>
+                    <Label x:Name="mirror_name" Content="Mirror folder path: " FontFamily="Sitka Text" Margin="20,139,0,55"/>
+
+                    <TextBox x:Name="name_save" Margin="0,33,0,166" Grid.Column="1" HorizontalAlignment="Center" Width="143" />
+                    <TextBox x:Name="SoureDir" Grid.Column="1" Margin="0,65,0,134"  Width="143" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="TargetDir" Grid.Column="1" Margin="0,102,0,97"  Width="143" HorizontalAlignment="Center" />
+                    <TextBox x:Name="MirrorDir" Grid.Column="1" HorizontalAlignment="Center" Margin="0,140,0,59"  Width="143" />
+
+                    <Button Content="..." Click="source_directory_Click" Margin="7,68,7,137" Grid.Column="2" Background="#FF098AC3" Foreground="White" BorderBrush="{x:Null}"/>
+                    <Button Name="target_directory" Content="..." Click="target_directory_Click" Grid.Column="2" Background="#FF098AC3" Foreground="White" BorderBrush="{x:Null}" Margin="7,106,7,99"/>
+                    <Button Name="mirror_directory" Content="..." Click="mirror_directory_Click" Grid.Column="2" Background="#FF098AC3" Foreground="White" BorderBrush="{x:Null}" Margin="7,142,7,63"/>
+
+                </Grid>
+            </Grid>
+
+            <Rectangle Grid.Row="1"  Margin="15" Fill="#FFD0D1D0" RadiusX="11" RadiusY="11"/>
+            <ListBox x:Name="Save_work" SelectionMode="Multiple" Grid.Row="1" Margin="27,27,363,27"/>
+
+            <Button x:Name="button_startsave" Click="button_startsave_Click" Margin="509,165,41,35"  Background="#FF0056A7" Height="48" BorderBrush="{x:Null}" Grid.Row="1">
+                <Grid Width="150" Height="30">
+                    <materialDesigin:PackIcon Kind="Update" Margin="-16,1,0,0" Foreground="White" Height="25" Width="25"/>
+                    <TextBlock x:Name="text_startbackup" Text="START THE BACKUP" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="160" FontSize="10" Foreground="White" Margin="2,0,0,0"/>
+                </Grid>
+            </Button>
+
+            <Rectangle Grid.Row="1"  Margin="406,22,23,128" Fill="#FF0056A7" RadiusX="15" RadiusY="15"/>
+            <materialDesigin:PackIcon Kind="Message" Margin="417,43,0,0" Foreground="White" Height="51" Width="56" Visibility="Visible" Grid.Row="1"/>
+            <TextBlock x:Name="result" TextAlignment="Justify"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="473,42,0,0" FontFamily="Sitka Text" Width="248" Grid.Row="1" Height="66" Foreground="White"/>
+
+        </Grid>
+
+        <Grid x:Name="GridMenu" Grid.ColumnSpan="2" Background="#FF0056A7" MouseDown="GridMenu_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Buttonexit" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Button_exit">
+                    <materialDesigin:PackIcon Kind="Power"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+
+
+
+    </Grid>
+</Window>

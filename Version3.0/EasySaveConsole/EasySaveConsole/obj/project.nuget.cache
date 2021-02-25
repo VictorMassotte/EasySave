@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ahHpbcHz34PxPdpXAEIJkFNxABO4spzsBF3NMGg2iggf2oGY4FXUmUX7TRPdabvtJIBnqQiu1nkKDtmcMdEGFg==",
+  "success": true,
+  "projectFilePath": "D:\\Git\\2020 - Projet.Net\\EasySaveConsole\\EasySaveConsole\\EasySaveConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\masso\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\masso\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

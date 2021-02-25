@@ -1,0 +1,26 @@
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.exe
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.deps.json
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.runtimeconfig.json
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.runtimeconfig.dev.json
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.dll
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.pdb
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.csprojAssemblyReference.cache
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.AssemblyInfoInputs.cache
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.AssemblyInfo.cs
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.csproj.CoreCompileInputs.cache
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.dll
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.pdb
+D:\Git\2020 - Projet.Net\Livrable n°1 par Victor M\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.genruntimeconfig.cache
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.exe
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.deps.json
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.runtimeconfig.json
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.runtimeconfig.dev.json
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.dll
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\bin\Debug\netcoreapp3.1\EasySaveApp.pdb
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.csprojAssemblyReference.cache
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.AssemblyInfoInputs.cache
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.AssemblyInfo.cs
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.csproj.CoreCompileInputs.cache
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.dll
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.pdb
+D:\Git\2020 - Projet.Net\Livrable n°1\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.genruntimeconfig.cache
