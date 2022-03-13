@@ -1,18 +1,18 @@
-#Introduction 
+# Introduction 
 Easysave is a back up folder software. It's a school project created by a team of 4 students. 
 
-#Context
+### Context
 Our team has just integrated the software publisher ProSoft.   Under the responsibility of the CIO, we are in charge of managing the "EasySave" project which consists in developing a backup software.  As any software of the ProSoft Suite, the software will be integrated into the pricing policy.
 - Unit price : 200 €HT
 - Annual maintenance contract 5/7 8-17h (updates included): 12% purchase price (Annual contract tacitly renewed with revaluation based on the SYNTEC index)
 During this project, we will have to ensure the development, the management of major and minor versions, but also the documentation (user and customer support).  To ensure that our work can be taken over by other teams, we must work within certain constraints such as the tools used. 
 
-#Built with 
+### Built with 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/fr/vs/) (enterprise version)
 - [Visual Pardigm](https://www.visual-paradigm.com/) (for diagram)
 - [Azure Repos](https://azure.microsoft.com/fr-fr/services/devops/repos/)
 
-#Version 1.0
+### Version 1.0
 The specifications of the first version of the software are as follows : 
 
 The software is a Console application using .Net Core. It must allow the creation of up to 5 backup jobs.
@@ -58,7 +58,7 @@ If the job is active
 
 The files (daily log and status) and any configuration files will be in XML or JSON format. In order to allow fast reading via Notepad, it is necessary to put line feeds between the XML (or JSON) elements. A pagination would be a plus.
 
-#Version 2.0
+### Version 2.0
 
 EasySave 1.0 has been distributed to many customers.  
 
@@ -95,12 +95,12 @@ git clone https://arthuroliveira0725@dev.azure.com/arthuroliveira0725/projet.NET
 
 Then refer to the usage section and you will be ready to go !
 
-#Start the application
+## Start the application
 * Version 1.0 : [Documentation User](Version1.0/UserDoc-Version1.0.md)
 * Version 2.0 : [Documentation User](Version2.0/UserDoc-EasySave2.0.md)
 * Version 3.0 : [Documentation User](Version3.0/UserDoc-EasySave3.0.md)
 
-#The versions of EasySave
+## The versions of EasySave
 
 | Version | Available          |
 | ------- | ------------------ |
@@ -109,7 +109,7 @@ Then refer to the usage section and you will be ready to go !
 |   [2.0](Version2.0/)   | :white_check_mark: |
 |   [3.0](Version3.0/)   | :white_check_mark: |
 
-#Authors
+## Authors
 - Victor Massotte
 - Arthur Oliveira
 - Kevin Meffodong
